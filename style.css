@@ -46,6 +46,11 @@ body {
   font-size: 1.8rem;
 }
 
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo-icon {
   width: 48px;
   height: 48px;
