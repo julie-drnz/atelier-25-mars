@@ -17,6 +17,8 @@ body {
     background: radial-gradient(circle at top, #f7fbff 0%, #eef6ff 66%, #f6faff 100%);
     color: var(--text-dark);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .topbar {
@@ -60,12 +62,18 @@ body {
 }
 
 .main-grid {
-    max-width: 1100px;
-    margin: 38px auto;
-    padding: 0 14px 32px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    max-width: 1100px;
+    padding: 0 14px;
 }
 
 .card {
@@ -97,8 +105,30 @@ body {
     font-size: 1.45rem;
 }
 
-.card p {
-    color: var(--text-medium);
-    margin-top: 0;
-    font-size: 1.03rem;
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cookie-notice {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 1, 43, 0.9);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--main-blue), #0056cc);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
