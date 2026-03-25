@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunet - Relevé de notes</title>
+    <link rel="stylesheet" href="bulletin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo-container">
+            <div class="logo-icon">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/smartphone.png" alt="Logo">
+            </div>
+            <span class="logo-text">Edunet</span>
+        </a>
+    </header>
+
+    <main class="content">
+        <div class="toolbar">
+            <div class="back-button">
+                <button class="round-btn">←</button>
+                <h1>Relevé de notes</h1>
+            </div>
+            <div class="actions">
+                <button class="btn-secondary"><img src="https://img.icons8.com/material-outlined/18/000000/print.png" alt=""> Imprimer</button>
+                <button class="btn-primary"><img src="https://img.icons8.com/material-outlined/18/ffffff/download.png" alt=""> Télécharger</button>
+            </div>
+        </div>
+
+        <div class="report-card">
+            <div class="card-header">
+                <h2 class="semester-title">Semestre 1</h2>
+                <div class="overall-average">
+                    <span class="avg-label">Moyenne générale</span>
+                    <span class="avg-value">15.41/20</span>
+                </div>
+            </div>
+
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Matière</th>
+                        <th>Coefficient</th>
+                        <th>Note</th>
+                        <th>Moyenne classe</th>
+                        <th>Appréciation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mathématiques</td>
+                        <td>3</td>
+                        <td class="grade positive">15.5/20</td>
+                        <td class="class-avg">13.2/20</td>
+                        <td class="remark blue">Très bien</td>
+                    </tr>
+                    <tr>
+                        <td>Physique</td>
+                        <td>3</td>
+                        <td class="grade">14/20</td>
+                        <td class="class-avg">12.8/20</td>
+                        <td class="remark blue">Très bien</td>
+                    </tr>
+                    <tr>
+                        <td>Informatique</td>
+                        <td>4</td>
+                        <td class="grade positive">17.5/20</td>
+                        <td class="class-avg">14.5/20</td>
+                        <td class="remark green">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Anglais</td>
+                        <td>2</td>
+                        <td class="grade positive">16/20</td>
+                        <td class="class-avg">13.9/20</td>
+                        <td class="remark green">Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Français</td>
+                        <td>2</td>
+                        <td class="grade">13.5/20</td>
+                        <td class="class-avg">12.5/20</td>
+                        <td class="remark gold">Bien</td>
+                    </tr>
+                    <tr>
+                        <td>Histoire-Géographie</td>
+                        <td>2</td>
+                        <td class="grade">14.5/20</td>
+                        <td class="class-avg">13/20</td>
+                        <td class="remark blue">Très bien</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
